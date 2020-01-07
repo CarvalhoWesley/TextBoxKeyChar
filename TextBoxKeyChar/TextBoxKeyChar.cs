@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TextBoxKeyChar
 {
@@ -80,7 +72,8 @@ namespace TextBoxKeyChar
                     this.Text = "PauseBreak";
                     break;
                 case 192:
-                    MessageBox.Show("Caracter não aceito. Escolha outro");
+                    this.Clear();
+                    KeyValue = 0;
                     this.Focus();
                     break;
                 case 48:
